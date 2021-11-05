@@ -38,21 +38,21 @@ int main(int argc, char* argv[]){
 	jackAccount.deposit(30.0);
 	jillAccount.deposit(30.0);
 	
-	for(int i = 0; i < sizeof(bankArray)/sizeof(bankArray[0]); i++){
+	for(int i = 0; i < 3; i++){
 		bankArray[i].deposit(30.0);
 	}
 
 	jackAccount.withdraw(20.0);
 	jillAccount.withdraw(20.0);
 
-	for(int i = 0; i < sizeof(bankArray)/sizeof(bankArray[0]); i++){
+	for(int i = 0; i < 3; i++){
                 bankArray[i].withdraw(20.0);
         }
 	
 	cout << "Name: " << jackAccount.getName() << " Balance: " << jackAccount.getBalance() << endl;
         cout << "Name: " << jillAccount.getName() << " Balance: " << jillAccount.getBalance() << endl;
 	
-	for(int i = 0; i < sizeof(bankArray)/sizeof(bankArray[0]); i++){
+	for(int i = 0; i < 3; i++){
                cout << "Name: " << bankArray[i].getName() << " Balance: " << bankArray[i].getBalance() << endl;
         }
 	
